@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- a_02_basic_list.html -->
+<html lang="ko-KR">
+  <head>
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리스트 문서 이해하기</title>
+    <!-- style -->
+    <style>
+      div {background-color:beige; border-width:1px; border-color:#333; border-style:solid;}
+      .ex_part {background-color:#adf;}
+      li {list-style-type:circle}
+    </style>
+  </head>
+  <body>
+    <!-- layout -->
+    <h1>웹기초</h1>
+    <hr />
+    <div>
+      <h2>list</h2>
+      <p>list의 종류와 그 역할에 대해 알아보자</p>
+
+      <div class="ex_part">
+        <h3>순서가 없는 리스트</h3>
+        <ul>
+          <li>순서 없는 리스트 01</li>
+          <li>순서 없는 리스트 02</li>
+          <li>순서 없는 리스트 03</li>
+          <li>순서 없는 리스트 04</li>
+          <li>순서 없는 리스트 05</li>
+        </ul>   
+      </div>
+
+      <hr />
+
+      <div class="ex_part">
+        <h3>순서가 있는 리스트</h3>
+        <ol>
+          <li>순서가 있는 리스트 01</li>
+          <li>순서가 있는 리스트 02</li>
+          <li>순서가 있는 리스트 03</li>
+          <li>순서가 있는 리스트 04</li>
+          <li>순서가 있는 리스트 05</li>
+        </ol>
+      </div>
+
+      <hr />
+
+      <div class="ex_part">
+        <h3>제목이 있는 리스트</h3>
+        <dl>
+          <dt>내용에 대한 제목1</dt>
+          <dd>제목에 따른 내용을 작성1-1</dd>
+          <dd>제목에 따른 내용을 작성1-2</dd>
+          <dd>제목에 따른 내용을 작성1-3</dd>
+          <dd>제목에 따른 내용을 작성1-4</dd>
+
+          <dt>내용에 대한 제목2</dt>
+          <dd>제목에 따른 내용을 작성2-1</dd>
+          <dd>제목에 따른 내용을 작성2-2</dd>
+          <dd>제목에 따른 내용을 작성2-3</dd>
+          <dd>제목에 따른 내용을 작성2-4</dd>
+        </dl>
+      </div>
+
+      <div class="ex_part">
+        <h3>다단 리스트</h3>
+
+        <ul>
+          <li>다단 리스트1</li>
+          <li>다단 리스트2</li>
+          <li>다단 리스트3</li>
+          <li>다단 리스트4</li>
+          <li>
+            <div>다단 리스트5</div>
+            <ul>
+              <li>다단 리스트5-1</li>
+              <li>다단 리스트5-2</li>
+              <li>
+                <div>다단 리스트5-3</div>
+                  <ol>
+                    <li>3단 리스트</li>
+                    <li>3단 리스트</li>
+                    <li>3단 리스트</li>
+                  </ol>
+              </li>
+              <li>다단 리스트5-4</li>
+              <li>다단 리스트5-5</li>
+            </ul>
+        </ul>
+
+      </div>
+
+      <hr />
+
+      <p>
+        ul,ol 리스트는 내부에 반듯 li요소만 작성이 가능 <br />
+        dl의 경우 내부에 dt/dd의 요소만 작성가능
+        <!-- ul,ol과 li, dl과 dt/dd는 부모-자식 관계 -->
+      </p>
+
+    </div>
+
+    <!-- script -->
+    <script></script>
+  </body>
+</html>
