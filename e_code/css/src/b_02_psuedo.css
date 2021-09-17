@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* b_02_psuedo.css */
+
+/*
+  선택자 {} 
+  @기능 () {} 
+    -> @madia screen and (min-width:320px) {}
+    -> @supports (옵션) {}
+  @기능 {} 
+    -> @animation 이름 {}
+  @기능 "역할"
+    -> @charset "UTF-8";
+    -> @import url("data");
+*/
+
+
+li {width:400px; height:auto; margin:5px; background-color:#ddd; padding:10px;}
+.on:hover {background-color:#0af;}
+/* :hover 은 'on'에 마우스 올렸을때 변화 */
+.push:active {background-color:#f0c;}
+/* :active 는 누르고 있을경우 변화 */
+.link > a:visited {color:#f00;}
+.go > a:link {color:#f00; background-color:#fca; display:block; width:100%; height:100%;}
+.none {display:none; width:100px; height:300px; background-color:#afa;}
+.on:hover > div {display:block;}
+.check > a:focus {outline:0; background-color:#a77; color:#fff;}
+
+.front {font-weight:700;}
+.front:before,
+.front::before {
+  content:"앞에 추가 -"; color:#f00; display:inline-block; 
+  width:100px; height:10px; background-color:#fa0;}
+
+.back {color:#505;}
+.back:after,
+.back::after {content:"- 뒤에 추가";}
+
+.both:before,
+.both::before {content:"앞에는 빨간색"; color:#f00; font-weight:900;}
+.both:after,
+.both::after {content:"뒤에는 노란색"; color:#f70; font-style:italic;}
+/* content 안에 있는 문자는 이미지처럼 선택이 안됨 */
+/* 구형 브라우저 구동을 위해 :,:: 두개다 사용 */
+
+.first::first-letter {font-size:2rem; font-weight:bold; color:#f06;}
+.multi_line::first-line {text-decoration:underline; color:#f70;}
