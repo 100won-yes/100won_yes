@@ -1,0 +1,150 @@
+@charset "UTF-8";
+/* b_04_mpbo */
+
+#wrap {
+  width:900px; height:auto;
+  margin:auto; 
+  padding-bottom:500px;
+  background-color:#eee;
+}
+
+.ex_part {
+  margin-bottom:50px;
+  background-color:#ddd;
+}
+
+.ex {
+  margin:auto;
+  width:95%; height:auto;
+  border-width:1px; 
+  border-style:solid;
+  border-color:#777;
+}
+
+.ex > div {
+  width:150px; height:150px;
+  border-radius:5px;
+  color:#fff; font-weight:900;
+  background-color:#07a;
+  background-image:
+    linear-gradient(45deg, #07a, #5a7);
+    
+}
+/* --------------------------- */
+/* margin:외부여백 - 요소와 요소사이의 공백 */
+.m_base {
+  /* border:0; */
+  width:200px;
+  background-color:#fda;
+}
+.m_base:after {
+  content:""; display:block; clear:both;
+}
+.m_base > div {
+  float:left;
+}
+/* float 속성이 들어가면 margin 값이 합쳐서 적용됨 */
+.margin_01 {
+  /* margin-left:50px; */
+  margin-bottom:10px;
+  margin-top:30px;
+  margin-right:100px;
+}
+/* margin top과 bottom이 같이 쓰이면 큰값만 적용됨 */
+.margin_02 { 
+  margin-top:50px;
+  /* margin-left:50px; */
+  /* margin-bottom:100px; */
+}
+/* --------------------------- */
+.m_base2 {margin-top:50px;}
+.m_base2:after {
+  content:""; display:block; 
+  clear:both;
+}
+.m_base2 > div {float:left;}
+
+.m_01 {margin:50px;}
+.m_02 {margin:10px 30px;}
+.m_03 {margin:10px 50px 30px;}
+.m_04 {margin:5px 20px 40px 70px;}
+.m_05 {margin:20px; margin-bottom:10px;}
+.m_06 {margin:0 auto;}
+.m_07 {margin-top:-50px;}
+.m_08 {margin-left:10%; margin-top:10%}
+/* .m_base2 {overflow:hidden;} */
+
+/* --------------------------- */
+.float_area {
+  list-style:none;
+  padding:0;
+  width:500px;
+  margin:auto;
+  border:1px solid #333;
+  background-color:#fff;
+}
+.float_area:after {
+  content:""; display:block;
+  clear:both;
+  width:100%; height:30px;
+  background-color:#fff;
+}
+.float_area > li {
+  float:left;
+  width:100px; height:100px;
+  background-image:
+    linear-gradient(60deg, #adf, #f7a);
+}
+.l_01 {margin-bottom:10px;}
+.float_area > .l_02 {
+  height:50px; margin-bottom:10px;}
+/* -------------------------------- */
+.p_base {
+  padding:0; list-style:none;
+  width:600px; height:auto;
+}
+.p_base::after {
+  content:""; display:block; clear:both;
+}
+.p_base > li {
+  float:left;
+  width:100px; height:100px;
+  background-color:#dfa;
+  background-image:linear-gradient(45deg, #dfa, #7c8);
+}
+.p_base span {
+  display:block; width:100%; height:100%;
+  background-color:rgba(255,255,255,0.3);
+}
+/* --------------------------------- */
+
+.p_01 {padding:10px;}
+.p_02 {padding:20px 40px;}
+.p_03 {padding:10px 40px 50px;}
+.p_04 {padding:5px 10px 20px 40px;}
+.p_05 {
+  padding-top:30px; padding-left:10px;
+  padding-right: 30px; padding-bottom: 20px;
+}
+.p_06 {
+  padding-top:10%; padding-left:10%;
+}
+.p_07 {
+  padding:10px; padding-right:40px;
+}
+.p_base .p_08 {
+  padding-top:30px;
+  background-image:none;
+  background-color:transparent;
+}
+.p_base .p_09 {
+  width:40px; height:40px;
+  padding:30px;
+}
+.p_10 {
+  width:100px; height:100px;
+  padding:30px;
+  /* box-sizing:content-box; */
+  /* content-box 는 기본 설정한 사이즈 */
+  box-sizing:border-box;
+}
