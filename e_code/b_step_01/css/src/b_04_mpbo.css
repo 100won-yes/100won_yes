@@ -148,3 +148,106 @@
   /* content-box 는 기본 설정한 사이즈 */
   box-sizing:border-box;
 }
+.b_base {
+  padding:0; list-style:none;
+  margin:auto; 
+}
+
+.b_base:after,
+.b_base::after {
+  content:""; display:block; clear:both;
+  width:100%; height:10px; 
+  background-color:#aff;
+}
+
+.b_base > li {
+  float:left;
+  width:100px; height:100px;
+  margin:30px; 
+  background-color:#5a5;
+}
+.b_01 {
+  border-width:5px; border-style:solid;
+  border-color:#f07;
+}
+/* border-style : solid || dotted || dashed || ridge ; */
+.b_02 {
+  border:10px dotted #fa0;
+}
+.b_03 {
+  border:5px dashed #dff; 
+  box-sizing: border-box;
+}
+.b_04 {
+  border:10px dotted #faa;
+  padding:10px;
+  background-clip:border-box;
+}
+/* background-clip: border-box (default) || padding-box || content-box || ingerit (부모와 같은값) */
+.b_05 {
+  border:5px solid #fac;
+  border-top:4px dashed #aff;
+  border-left-color:#afc;
+  border-right-width:10px;
+  border-bottom-width:0;
+}
+.b_06 {
+  border-top:5px solid #fac;
+  border-bottom:5px solid #fac;
+}
+.b_06 button {
+  padding:0;
+  cursor:pointer;
+  border:20px solid transparent;
+  border-left:30px solid #f33;
+  border-right:0;
+  background-color:transparent;
+}
+.b_06 span {
+  display:block;
+  width:0; height:0; overflow:hidden;
+}
+/* outline------------------------------------ */
+.o_base {
+  margin:auto; padding:0;
+  list-style:none;
+}
+.o_base > li {
+  width:100px; height:100px;
+  margin:50px;
+  background-color:#37a;
+}
+.o_01 {
+  outline:5px solid #fa0;
+}
+.o_02 {
+  border:10px solid #afc;
+  outline:10px dotted #fac;
+  outline-offset:25px;
+}
+/* outline 은 margin,border,padding 와 다르게 박스에 영향을 주지 않는다 */
+.o_03 > a {
+  display:block; width:100%; height:100%; 
+  color:#fff; text-decoration:none;
+  text-align:center;
+  line-height:100px;
+}
+.o_04 > button {
+  width:100%; height:100%;
+  margin:0; padding:0; border:0;
+  background-color:transparent;
+  cursor:pointer;
+}
+.o_03 a:hover,
+.o_04 button:hover {
+  color:#171717;
+  background-color:rgba(255,255,255,0.2);
+  outline:5px solid #f07;
+  transition:all 300ms ease;
+}
+.o_03 a:focus,
+.o_04 button:focus {
+  outline:5px solid #f07;
+  background-color:#fa0;
+  font-size:1.2rem;
+}

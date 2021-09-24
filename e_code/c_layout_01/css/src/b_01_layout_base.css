@@ -87,6 +87,39 @@
   background-color:#57f;
 }
 /* ----------------------- */
+.box_05 {
+  width:600px; height:auto;
+  margin:auto;
+  border:5px solid #ccc;
+}
+.box_05:after,
+.box_05::after {
+  content:"";
+  display:block;
+  width:100%; height:0;
+  clear:both;
+}
+.box_05 > div {
+  float:left;
+  width:200px; height:600px;
+  padding:5px; box-sizing:border-box;
+}
+.box_05 .insert {
+  width:100%; height:200px;
+  background-color:#ada;
+}
+.box_05 .inner_02 {
+  padding-top:180px;
+  box-sizing:border-box;
+}
+/* .inner_02 > .insert {
+  margin-top:200px; 
+} */
+.inner_03 > .insert {
+  margin-top:400px;
+}
+
+/* ----------------------- */
 .box_06 {
   width:600px; height:auto;
   min-height:200px;
@@ -146,3 +179,5 @@ contert, display:block 고정
   width:300px; height:200px;
   background-color:#ddd;
 }
+
+

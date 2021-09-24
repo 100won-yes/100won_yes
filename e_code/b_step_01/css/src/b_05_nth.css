@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/* b_05_nth.css */
+
+.ex {
+  width:80%; height:auto;
+  margin:auto; padding:20px;
+  border:1px solid #333;
+}
+ul {
+  background-color:#eee;
+}
+ul li {margin-bottom:5px; padding:3px 0;}
+ul li:first-child {background-color:#adf;}
+ul li:nth-child(1) {color:#f07;}
+/* css는 1이 첫번째이지만 보통의 프로그래밍언어는 0이 첫번째 */
+ul li:nth-child(2) {color:#0f7;}
+ul li:nth-child(5) {border-bottom:1px solid #5ac;}
+ul li:last-child {margin-bottom:0;}
+ul li:nth-last-child(1) {background-color:#add;}
+ul li:nth-last-child(3) {background-color:#a6d;}
+ul li:nth-child(2n) {text-indent:20px;}
+ul li:nth-child(2n-1) {text-indent:50px;}
+
+ul li:nth-child(4n)::first-letter {font-size:20px;}
+ul li:nth-child(6n+2) {text-transform:uppercase; font-weight:bold;}
+ul li:nth-child(n+4):nth-child(-n+8) {
+  background-image:linear-gradient(45deg, #fac, #adf)
+}
+/* 
+nth-child(n+4) 는 4번째부터 이후로 전부다
+  nth-child(-n+8) 는 8번째 전으로 전부다
+*/
+ul li:nth-child(-n+3) {border-radius:5px;}
+/* ----------------------------------------------------------------- */
+dt:nth-child(1) {background-color:#ccc;}
+/* 
+dt:nth-child(2) {background-color:#acd;} 
+단순한 줄상의 번째수
+*/
+/* dl :nth-child(2) {background-color:#acd;}
+dl :nth-child(3n) {background-color:#fcd;} */
+dt:nth-of-type(2) {font-weight:bold; color:#f00;}
+dt:nth-of-type(3) {font-weight:bold; color:#500;}
+dd:nth-of-type(3) {font-size:30px; color:#00a;}
+/* nth-of-type는 .box 같은 class에는 적용 안됨 */
+/* dd:first-of-type {}
+dd:last-of-type {} */
+
+
