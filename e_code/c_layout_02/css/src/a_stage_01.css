@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/* a_stage_01.css */
+
+/* reset.css 
+================================================================ */
+body {margin: 0;}
+
+h1,
+h2,h3,h4,h5,h6,
+p,pre,address,
+ul,ol,li,dl,dt,dd {
+  /* margin: 0; padding: 0; */
+  /* font-size:16px;  */
+  font-family:sans-serif; }
+
+ul,ol { list-style:none;}
+
+a { text-decoration: none; color:inherit;}
+
+
+/* common.css 
+================================================================ */
+.clearfix:after,
+.clearfix::after{
+  content:""; display: block; clear:both;
+}
+
+
+/* design 
+================================================================ */
+#wrap {
+  margin:auto; width:150px; height:80px; background-color:#FDD655;}
+h1 {margin:auto; width:100%; height:50px; text-align:center;}
+.back a {
+  display:block; font-size:20px;
+  width:100%; height:30px; text-align:center;
+  color:#FDD655; background-color: #000;
+}
+#base {
+  margin:auto; margin-top:100px;
+  width:1600px; height:auto; background-color: #fff;
+}
+
+/* #headBox
+----------------------------------------------------------------- */
+
+#headBox {width:auto; height:150px; background-color:#ddd;}
+
+/* #adViewBox
+----------------------------------------------------------------- */
+
+#adViewBox {width:auto; height:750px; background-color:#bbb;}
+
+/* #localNavBox
+----------------------------------------------------------------- */
+
+#localNavBox {
+  margin-bottom:50px; 
+  width:auto; height:250px; background-color:#999;
+}
+
+/* #popularContentBox
+----------------------------------------------------------------- */
+
+#popularContentBox {width:auto; height:600px; background-color:#666;}
+
+/* #newContentBox
+----------------------------------------------------------------- */
+
+#newContentBox {
+  margin-bottom:80px; 
+  width:auto; height:900px; background-color:#999;
+}
+
+/* #recommendedConttentBox
+----------------------------------------------------------------- */
+
+#recommendedConttentBox {
+  margin-bottom:80px; 
+  width:auto; height:600px; background-color:#bbb;
+}
+
+/* #communityBox
+----------------------------------------------------------------- */
+
+#communityBox {
+  margin-bottom:80px; 
+  width:auto; height:800px; background-color:#ddd;
+}
+
+/* #miniAdBox
+----------------------------------------------------------------- */
+
+#miniAdBox {
+  margin-bottom:80px; 
+  width:auto; height:400px; background-color:#bbb;
+}
+
+/* #footBox
+----------------------------------------------------------------- */
+
+#footBox {
+  margin-bottom:100px;
+  width:auto; height:200px; background-color:#999;
+}
+
+

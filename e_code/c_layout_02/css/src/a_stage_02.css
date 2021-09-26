@@ -1,0 +1,170 @@
+@charset "UTF-8";
+/* a_stage_02.css */
+
+/* reset.css 
+================================================================ */
+body {margin: 0;}
+
+h1,
+h2,h3,h4,h5,h6,
+p,pre,address,
+ul,ol,li,dl,dt,dd {
+  margin: 0; padding: 0;
+  /* font-size:16px;  */
+  font-family:sans-serif; }
+
+ul,ol { list-style:none;}
+
+a { text-decoration: none; color:inherit;}
+
+
+/* common.css 
+================================================================ */
+.clearfix:after,
+.clearfix::after{
+  content:""; display: block; clear:both;
+}
+
+
+/* design 
+================================================================ */
+#wrap {
+  margin:auto; width:150px; height:80px; background-color:#FDD655;
+}
+h1 {margin:auto; width:100%; height:50px; text-align:center;}
+.back a {
+  display:block; font-size:20px;
+  width:100%; height:30px; text-align:center;
+  color:#FDD655; background-color: #000;
+}
+#base {
+  margin:auto; margin-top:100px;
+  width:1600px; height:auto; background-color: #fff;
+}
+
+/* #headBox
+----------------------------------------------------------------- */
+
+#headBox {
+  box-sizing:border-box;
+  padding-top:34px; padding-left:50px; padding-right:50px;
+  width:auto; height:150px; background-color:#ddd;
+}
+  #headBox > div {float:left; background-color:#3bc;}
+  .head_01 {
+    font-size:50px; text-align:center;
+    margin-right:75px;
+    width:250px; height:80px;
+  }
+  .head_02 {width:850px; height:80px;}
+  .head_03 {margin-left:75px; width:250px; height:80px;}
+
+/* #adViewBox
+----------------------------------------------------------------- */
+
+#adViewBox {
+  padding-top:28px; box-sizing:border-box;
+  width:auto; height:750px; background-color:#bbb;
+}
+  #adViewBox > div {background-color:#3bc;}
+  .view_outer {
+    margin:auto; margin-bottom:28px;
+    width:1300px; height:600px;
+  }
+  .view_indicator {margin:auto; width:850px; height:60px;}
+
+/* #localNavBox
+----------------------------------------------------------------- */
+
+#localNavBox {
+  margin-bottom:50px; padding-top:18px; box-sizing:border-box;
+  width:auto; height:250px; background-color:#999;
+}
+  .local_nav_outer {
+    margin:auto; 
+    width:1500px; height:196px; background-color:#3bc;
+  }
+
+/* #popularContentBox
+----------------------------------------------------------------- */
+
+#popularContentBox {width:auto; height:600px; background-color:#666;}
+  #popularContentBox > div {background-color:#3bc;}
+  .h3 {
+    margin:auto; margin-bottom:30px;
+    width:1300px; height:50px; background-color:#3bc;
+  }
+  .pop_con_area {
+    margin:auto; 
+    width:1300px; height:470px;
+  }
+
+/* #newContentBox
+----------------------------------------------------------------- */
+
+#newContentBox {
+  padding-top:60px; box-sizing:border-box;
+  margin-bottom:80px; 
+  width:auto; height:900px; background-color:#999;
+}
+  #newContentBox > div {background-color:#3bc;}
+  .new_con_area {
+    margin:auto; 
+    width:1300px; height:700px;
+  }
+
+/* #recommendedConttentBox
+----------------------------------------------------------------- */
+
+#recommendedConttentBox {
+  padding-top:30px; box-sizing:border-box;
+  margin-bottom:80px; 
+  width:auto; height:600px; background-color:#bbb;
+}
+  #recommendedConttentBox > div {background-color:#3bc;}
+  .recom_con_area {
+    margin:auto; 
+    width:1300px; height:440px;
+  }
+/* #communityBox
+----------------------------------------------------------------- */
+
+#communityBox {
+  padding-top:60px; box-sizing:border-box;
+  margin-bottom:80px; 
+  width:auto; height:800px; background-color:#ddd;
+}
+  #communityBox > div {background-color:#3bc;}
+  .community_area {
+    margin:auto; 
+    width:1300px; height:600px;
+  }
+/* #miniAdBox
+----------------------------------------------------------------- */
+
+#miniAdBox {
+  padding-top:40px; box-sizing:border-box;
+  margin-bottom:80px; 
+  width:auto; height:400px; background-color:#bbb;
+}
+  #miniAdBox > div {background-color:#3bc;}
+  .mini_ad_outer {
+    margin:auto; 
+    width:1500px; height:300px;
+  }
+
+/* #footBox
+----------------------------------------------------------------- */
+
+#footBox {
+  padding-top:22px; box-sizing:border-box;
+  margin-bottom:100px;
+  width:auto; height:200px; background-color:#999;
+}
+  #footBox > div {background-color:#3bc;}
+  .foot_area {
+    margin:auto; 
+    width:1300px; height:140px;
+  }
+
+

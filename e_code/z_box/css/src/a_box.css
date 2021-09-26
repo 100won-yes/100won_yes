@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/* a_box */
+
+.clearfix:after,
+.clearfix::after{content:""; display: block; clear:both;}
+
+.box1, .box2 {
+  margin:auto; width:600px; height:600px; background-color:#95D6A4;
+}
+.box1 > .inner_01 {width:100%; height:200px; background-color:#456EA2;}
+.box1 > .inner_02 {width:100%; height:200px; background-color:#FFF9EB;}
+.box1 > .inner_03 {width:100%; height:200px; background-color:#FFCF5D;}
+
+.box2 > div {float:left;}
+.box2 > .inner_01 {width:200px; height:100%; background-color:#456EA2;}
+.box2 > .inner_02 {width:200px; height:100%; background-color:#FFF9EB;}
+.box2 > .inner_03 {width:200px; height:100%; background-color:#FFCF5D;}
+
+.box6 {margin:auto; width:600px; height:auto;}
+
+.box6 > .inner_01 {width:100%; height:auto; background-color:#456EA2;}
+.box6 > .inner_02 {width:100%; height:auto; background-color:#FFF9EB;}
+.box6 > .inner_03 {width:100%; height:auto; background-color:#FFCF5D;}
+
+.inner_01 > div,
+.inner_02 > .insert_01,
+.inner_02 > .insert_03,
+.inner_03 > .insert_02 {width:230px; height:200px;}
+.inner_01 > .insert_01 {float:left; background-color:#FFCF5D;}
+.inner_01 > .insert_02 {float:right; background-color:#FFEBD2;}
+.inner_02 > div,
+.inner_03 > div {float:left;}
+.inner_02 > .insert_01 {background-color:#DB5446;}
+.inner_02 > .insert_02 {
+  width:140px; height:200px; background-color:#6C7A88;
+}
+.inner_02 > .insert_03 {background-color:#C79A83;}
+.inner_03 > .insert_01 {
+  width:370px; height:200px; background-color:#7E94FF;
+}
+.inner_03 > .insert_02 {background-color:#6C7A88;}
