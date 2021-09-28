@@ -1,0 +1,89 @@
+@charset "UTF-8";
+/* b_stage_01.css */
+
+/* reset.css 
+================================================================ */
+html,body {width:100%; height:100%;}
+
+header, nav, section, main, article, aside, footer,
+figure, figcaption {
+  display:block; margin:0; padding:0; border:0;
+}
+
+html,body, 
+h1,h2,h3,h4,h5,h6,
+p,pre,address,
+ul,ol,li,dl,dt,dd {
+  margin: 0; padding: 0;
+  /* font-size:16px;  */
+  font-family:sans-serif; }
+
+ul,ol { list-style:none;}
+
+a { text-decoration: none; color:inherit;}
+
+
+/* common.css 
+================================================================ */
+.clearfix:after,
+.clearfix::after{
+  content:""; display: block; clear:both;
+}
+.blind {width:0; height:0; overflow:hidden;}
+/* design 
+================================================================ */
+#wrap {
+  margin:auto; width:150px; height:80px; background-color:#FDD655;
+}
+h1 {margin:auto; width:100%; height:50px; text-align:center;}
+.back a {
+  display:block; font-size:20px;
+  width:100%; height:30px; text-align:center;
+  color:#FDD655; background-color: #000;
+}
+
+/* =============================================================== */
+#base {
+  margin:auto; 
+  width:1440px; height:auto; background-color:#abd;
+}
+
+#headBox {
+  padding:20px 170px 10px 170px; box-sizing:border-box; width:auto; 
+  height:100px; background-color:#c4c4c4;
+}
+  .logoBox {
+    float:left; width:120px; height:70px; background-color:#555555;
+  }
+  .navi {
+    float:right; width:510px; height:auto;
+  }
+  .main_navi {
+    float:right; margin-bottom:9px; 
+    padding:3px 5px; box-sizing:border-box; 
+    width:270px; height:26px; background-color:#555555;
+  }
+    .main_navi li {
+      margin-right:20px; float:left; 
+      width:50px; height:20px; background-color:#fff;
+    }
+    .main_navi li:nth-last-child(1) {margin-right:0px;}
+
+  .sub_navi {
+    float:right;
+    padding:5px; box-sizing:border-box; 
+    width:510px; height:35px; background-color:#555555;
+  }
+    .sub_navi li {
+      margin-right:16px; float:left; 
+      width:70px; height:25px; background-color:#fff;
+    }
+    .sub_navi li:nth-last-child(1) {margin-right:0px;}
+
+  #adViewBox_01 {width:auto; height:600px; background-color:#834c33;}
+#moveBox {width:auto; height:700px; background-color:#ffffff;}
+#adViewBox_02 {width:auto; height:350px; background-color:#ffbd55;}
+#probuctBox {width:auto; height:700px; background-color:#ffffff;}
+#serviceBox {width:auto; height:750px; background-color:#f7e9d3;}
+#miniAdBox {width:auto; height:100px; background-color:#777777;}
+#footBox {width:auto; height:450px; background-color:#171717;}

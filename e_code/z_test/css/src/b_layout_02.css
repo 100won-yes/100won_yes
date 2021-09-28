@@ -1,0 +1,67 @@
+@charset "UTF-8"; 
+/* b_layout_02.css */
+
+/* reset.css */
+html,body {margin:0; padding:0;}
+
+header, nav, section, main, article, aside, footer,
+figure, figcaption {
+  display:block; margin:0; padding:0; border:0;
+}
+html,body, 
+h1,h2,h3,h4,h5,h6,
+p,pre,address,
+ul,ol,li,dl,dt,dd {
+  margin: 0; padding: 0;
+  /* font-size:16px;  */
+  font-family:sans-serif; }
+
+ul,ol { list-style:none;}
+
+a { text-decoration: none; color:inherit;}
+
+.blind {width:0; height:0; overflow:hidden;}
+
+/* common.css */
+.clearfix:after,
+.clearfix::after{
+  content:""; display: block; clear:both;
+}
+
+/* design */
+#wrap {
+  margin:auto; width:700px; height:auto; background-color:#ddd;
+}
+#headbox {
+  padding:15px; box-sizing:border-box; 
+  width:auto; height:80px; background-color:#2dc;
+}
+  h1 {float:left; width:100px; height:50px; background-color:#fff;}
+  nav {
+    float:right; padding-top:20px; box-sizing:border-box;
+    width:auto; height:auto;
+  }
+  nav > div {
+    float:left; margin-right:10px;
+    width:100px; height:30px; background-color:#fff;
+  }
+#banner {width:auto; height:250px; background-color:#55d;}
+#aside {width:auto; height:35px; background-color:#df3;}
+#art_zone {width:auto; height:300px; background-color:#28d;}
+  .art_zone_inner_01 {
+    float:left; padding:10px 15px 10px 15px; box-sizing:border-box;
+    width:50%; height:300px; background-color:#88a;}
+    .art_zone_inner_01 > article {
+      float:left; margin:10px; width:140px; height:120px; background-color:#fff;
+    }
+    
+  .art_zone_inner_02 {
+    float:left; padding-left:36px; padding-top:55px; box-sizing:border-box; 
+    width:50%; height:300px; background-color:#340;
+  }
+    .art_zone_inner_02 > article {
+      margin:10px; width:258px; height:50px; background-color:#fff;
+    }
+#footer {width:auto; height:80px; background-color:#97a;}
+
+
