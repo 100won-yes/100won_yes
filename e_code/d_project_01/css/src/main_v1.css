@@ -1,0 +1,150 @@
+@charset "UTF-8";
+/* main_v1.css */
+
+/* 변수(var) */
+body {
+  --color-gray1:#c4c4c4;
+  --color-sample1:rgba(20,100,255,0.15);
+}
+
+/* design 
+================================================================ */
+
+#wrap {width:1440px; height:auto; min-height:500px;}
+
+/* #headBox
+================================================================= */
+
+#headBox {
+  width:100%; height:100px; 
+  padding-top:20px; padding-bottom:10px;
+  background-color:#c4c4c4; /* 구버전 브라우저 때문에 씀 */
+  background-color:var(--color-gray1);
+}
+  .head_inner {
+    width:1000px; height:100%; margin:auto; 
+    background-color:var(--color-sample1);
+  }
+  h1 {
+    float:left; width:120px; height:70px;
+    background-color:#555;
+  }
+  #navigation {
+    float:right; width:510px; height:70px;
+    background-color:var(--color-sample1);
+  }
+
+/* #viewBox
+================================================================= */
+
+#viewBox {
+  width:100%; height:600px; padding-top:100px;
+  background-color:#868686;
+}
+  .view_inner {
+    width:780px; height:400px; margin:auto;
+    background-color:var(--color-sample1);
+  }
+  .view_inner dl {
+    float:left; margin-top:70px;
+    width:300px; height:270px;
+    background-color:var(--color-sample1);
+  }
+  .view_inner dt {
+    margin-bottom:12px;
+    font-size:40px;
+    width:100%; height:auto;
+  }
+  .view_inner dd {
+    width:100%; height:140px;
+    background-color:var(--color-sample1);
+  }
+  .view_inner dd:last-of-type {
+    height:50px; margin-top:5px;
+    background-color:var(--color-sample1);
+  }
+  .view_inner dd:last-of-type a {
+    display:block;
+    width:100%; height:100%;
+    /* padding:10px 20px; padding-right:200px; */
+    font-size:18px;
+    background-color:#fff;
+  }
+  .img_source {
+    float:right; width:380px; height:400px;
+    background-color:var(--color-sample1);
+  }
+/* #newBox
+================================================================= */
+
+#newBox {
+  width:100%; height:700px; padding-top:60px; 
+  background-color:#fff;
+}
+  .new_inner {
+    width:940px; height:570px; margin:auto;
+  background-color:var(--color-sample1);
+}
+
+/* #subBox
+================================================================= */
+
+#subAdBox {
+  width:100%; height:350px; padding-top:50px;
+  background-color:#777;
+}
+  .sub_inner {
+    width:1100px; height:300px; margin:auto;
+    background-color:var(--color-sample1);
+  }
+
+/* #bestBox
+================================================================= */
+
+#bestBox {
+  width:100%; height:700px; padding-top:160px; 
+  background-color:#fff;
+}
+  .best_inner {
+    width:1100px; height:380px; margin:auto;
+    background-color:var(--color-sample1);
+  }
+
+/* #galleryBox
+================================================================= */
+
+#galleryBox {
+  width:100%; height:750px; padding-top:80px;
+  background-color:#c4c4c4;
+}
+  .gallery_inner {
+    width:940px; height:540px;
+    margin:auto;
+    background-color:var(--color-sample1);
+  }
+
+/* #sponsorBox
+================================================================= */
+
+#sponsorBox {
+  width:100%; height:100px; padding-top:10px;
+  background-color:#777;
+}
+  .sponsor_inner {
+    width:940px; height:80px;
+    margin:auto;
+    background-color:var(--color-sample1);
+  }
+
+/* #footBox
+================================================================= */
+
+#footBox {
+  width:100%; height:auto; 
+  padding-top:70px; padding-bottom:140px; 
+  background-color:#333;
+}
+  .foot_inner {
+    width:940px; height:250px; margin:auto;
+    background-color:var(--color-sample1);
+  }
