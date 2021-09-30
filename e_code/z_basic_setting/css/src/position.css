@@ -1,0 +1,23 @@
+@charset "UTF-8"; 
+/* position.css */
+
+#wrap {
+  position:relative;
+  width:800px; height:600px; background-color:#ff00aa;
+}
+
+.modal {
+  position:absolute;
+  top:30%; left:calc(50% - 250px);
+  width:500px; height:150px; background-color:#00aaff;
+}
+
+.wrap {
+  margin:auto; margin-top:100px; 
+  width: 800px; height: 600px; background-color:#ff00aa;
+}
+.side_indicator {width: 50px; height: 350px; background-color:#00aaff;}
+.side_indicator li {
+  border-radius:50px;
+  width: 30px; height: 30px; background-color:#fff;
+}

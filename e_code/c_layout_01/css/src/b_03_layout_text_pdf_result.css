@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+* {margin:0; padding:0; border:0;}
+
+/* ---------------------------------- */
+
+.wrap {
+  position:relative;
+  margin: 100px auto;
+  width:800px; height: 600px;
+  background-color:#f0a;
+  /* border-top:1px solid #f0a; */
+}
+
+.q_8 > .modal {
+  width: 500px; height: 150px;
+  background-color: #0af;
+  /* 방법1 */
+  /* margin-top:225px;
+  margin-left:150px;   */
+  /* 방법2 */
+  position: absolute;
+  top:30%; left:50%; margin-left:-250px;
+}
+
+/* ------------------------------------ */
+.q_9 > .side_indicator {
+  position:absolute;
+  right:30px;
+  width:50px; 
+  /* height: 350px; */
+  height:auto;
+  background-color: #0af;
+
+  /* 방법1 */
+  /* top:125px; */
+  /* 방법2 */
+  top:50%; margin-top:-175px;
+}
+
+.q_9 ul {
+  list-style:none;
+  width: 100%; height:100%;
+  padding:10px 0;
+} 
+.q_9 li {
+  width:30px; height:30px;
+  margin:0 auto;
+  margin-bottom:30px;
+  border-radius:100%;
+  background-color:#fff;
+}
+
+.q_9 li:last-child {margin-bottom:0;}
+
+/* ------------------------------------- */
+
+.q_10 > .side_indicator {
+  position:absolute;
+  right:30px; top:125px;
+  width:50px; height:auto;
+  background-color: #0af;
+}
+
+.q_10 ul {
+  list-style:none;
+  width: 100%; height: auto;
+  padding:10px; box-sizing:border-box;
+}
+
+.q_10 li {
+  position: relative;
+  width: 30px; height: 30px;
+  margin-bottom:20px;
+}
+
+.q_10 li:last-child {margin-bottom:0;}
+
+.q_10 a {
+  display:block;
+  width: 100%; height: 100%;
+  border-radius:100%;
+  background-color: #fff;
+}
+
+.q_10 span {
+  display:block;
+  position: absolute;
+  right: 50px; top:-5px;
+  width: 200px; height: 40px;
+  box-sizing:border-box; padding:8px;
+  color:#fff;
+  background-color: #06c;
+  margin-left:-250px;
+}
+
+.q_10 a:hover + span {display:none;}
+
+.siblings {
+  width: 400px; height: 800px;
+  margin:auto;
+  border:1px solid #777;
+}
+
+.siblings > dt {background-color:#ccf;}
+
+.siblings > dt:hover + dd {background-color:#faa;}
+/* + 뜻은 dt 바로 뒤에 오는 dd 선택 */
+.siblings > dt ~ dd {background-color: #afa;}
+/* ~ 뜻은 dt 뒤에 있는 모든 dd 선택 */
+
+.title_box {
+  position:absolute;
+  padding:10px;
+  top:30%; left:20px;
+  z-index:300;
+  width: 450px; height: 200px;
+  background-color:rgba(38, 10, 200, 0.3);
+}
+h1 {font-size: 1.5rem; color:#fff;}
+p {font-size: 1rem; color:#fff;}
+
+.img1 {
+  position:absolute;
+  bottom:0; right:220px;
+  z-index:200;
+  width: 250px; height: 400px; background-color:#5bb;
+}
+.img2 {
+  position:absolute;
+  bottom:0; right:20px;
+  z-index:100;
+  width: 250px; height: 500px; background-color:#798;
+}
