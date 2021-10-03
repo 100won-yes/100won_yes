@@ -1,0 +1,221 @@
+@charset "UTF-8";
+/* main_page */
+
+/* 
+--c01:#fff;
+--c02:#ddd;
+--c03:#aaa;
+--c04:#666;
+--c05:#333; */
+
+
+#wrap {width:1440px; height:auto;}
+
+/* #headBox ===================================================== */
+
+#headBox {
+  padding-top:25px;
+  width:auto; height:140px; background-color:#ddd;
+}
+  .head_inner {margin:auto; width:1090px; height:90px;}
+    .menu_navigation {
+      float:left; margin-top:25px;
+      width:120px; height:40px; background-color:#ffb;
+    }
+    .logo_area {
+      float:left; margin:0 265px;
+      width:320px; height:90px; background-color:#ffb;
+    }
+    .login_area {
+      float:right; margin-top:25px;
+      width:120px; height:40px; background-color:#ffb;
+    }
+
+/* #mainAdBox ==================================================== */
+
+#mainAdBox {width:auto; height:760px; background-color:#aaa;}
+  .move_button_box {
+    margin:auto; margin-top:696px;
+    width:170px; height:26px;
+  }
+  .move_button_box li {
+    float:left; margin-right:10px;
+    border-radius:100%;
+    width:26px; height:26px; background-color:#ffb;
+  }
+  .move_button_box li:last-child {margin:0;}
+
+/* #menuBox ====================================================== */
+
+#menuBox {
+  padding:90px 250px;
+  width:auto; height:760px; background-color:#666;
+}
+  .menu_inner {width:940px; height:580px;}
+  .menu_inner li {float:left; }
+    .brandstory {
+      margin-bottom:20px; margin-right:20px;
+      width:300px; height:280px; background-color:#ffb;
+    }
+    .menu {
+      margin-bottom:20px;
+      width:620px; height:280px; background-color:#ffb;
+    }
+    .franchise {
+      margin-right:20px;
+      width:300px; height:280px; background-color:#ffb;
+    }
+    .store {
+      margin-right:20px;
+      width:300px; height:280px; background-color:#ffb;
+    }
+    .news {width:300px; height:280px; background-color:#ffb;}
+/* #newproductBox ================================================= */
+
+#newproductBox {width:auto; height:600px; background-color:#aaa;}
+    .newproduct_area {
+      margin:auto; margin-top:144px;
+      width:240px; height:320px;
+    }
+      .newproduct_title {
+        width:240px; height:60px; background-color:#ffb;
+      }
+      .newproduct_text {
+        margin:45px 0;
+        width:240px; height:110px; background-color:#ffb;
+      }
+      .newproduct_area > div {
+        margin:auto;
+        width:140px; height:60px; background-color:#ffb;
+      }
+
+/* #introductionBox ================================================= */
+
+#introductionBox {
+  padding:50px 0;
+  width:auto; height:600px; background-color:#ddd;
+}
+  .introduction_inner {width:1440px; height:500px;}
+  .introduction_inner> div {float:left;}
+    .introduction_main {
+      margin:0 100px;
+      width:1000px; height:500px; background-color:#ffb;
+    }
+    .introduction_main > div {
+      margin-top:220px;
+      width:30px; height:60px; background-color:#fdb;
+    }
+      .introduction_left_button {float:left;}
+      .introduction_right_button {float:right;}
+    .introduction_sub_01 {
+      width:120px; height:500px; background-color:#ffb;
+    }
+    .introduction_sub_02 {
+      width:120px; height:500px; background-color:#ffb;
+    }
+
+/* #videoAdBox ===================================================== */
+
+#videoAdBox {
+  padding:75px 0;
+  width:auto; height:600px; background-color:#aaa;
+}
+  .video_inner {
+    margin:auto;
+    width:1020px; height:450px;
+  }
+    .video_area {
+      float:left; margin-top:75px; margin-left:55px;
+      width:210px; height:300px;
+    }
+      .video_title_big {
+        width:160px; height:240px; background-color:#fdb;
+      }
+      .video_title_small {
+        margin-top:20px;
+        width:210px; height:40px; background-color:#fdb;}
+    .video_player {
+      float:right;
+      width:700px; height:450px; background-color:#ffb;
+    }
+
+/* #subAdBox_01 ===================================================== */
+
+#subAdBox_01 {
+  padding:30px 0;
+  width:auto; height:360px; background-color:#666;
+}
+  .sub_inner_01 {
+    margin:auto;
+    width:1200px; height:300px; background-color:#bff;
+  }
+
+/* #subAdBox_02 ===================================================== */
+
+#subAdBox_02 {
+  padding:50px 0;
+  width:auto; height:360px; background-color:#aaa;
+}
+  .sub_inner_02 {
+    margin:auto;
+    width:240px; height:260px;
+  }
+    .sub_02_title {
+      margin:auto;
+      width:200px; height:60px; background-color:#ffb;
+    }
+    .sub_02_text {
+      margin:15px 0;
+      width:240px; height:110px; background-color:#ffb;
+    }
+    .sub_02_area > div {
+      margin:auto;
+      width:140px; height:60px; background-color:#ffb;
+    }
+
+/* #subAdBox_03 ===================================================== */
+
+#subAdBox_03 {width:auto; height:700px; background-color:#ddd;}
+  .sub_inner_03 {
+    padding:150px;
+    margin:auto; width:1200px; height:700px; background-color:#bff;
+  }
+    .sub_inner_03_on {
+      padding:40px 30px; box-sizing:border-box;
+      width:300px; height:400px;
+    }
+      .sub_03_title {
+        width:140px; height:60px; background-color:#fdb;
+      }
+      .sub_03_text {
+        margin:30px 0;
+        width:240px; height:140px; background-color:#fdb;
+      }
+      .sub_03_area > div {
+        width:140px; height:60px; background-color:#fdb;
+      }
+
+/* #footBox ========================================================== */
+
+#footBox {
+  padding:25px 0;
+  width:auto; height:250px; background-color:#333;
+}
+  .foot_inner {
+    margin:auto; width:760px; height:200px;
+  }
+    .mini_logo {
+      float:left; margin-left:250px;
+      width:260px; height:70px; background-color:#ffb;
+    }
+    .instagram_but {
+      float:right;
+      width:40px; height:40px; background-color:#ffb;
+    }
+    .companyinfo {
+      float:left; margin-top:50px;
+      width:760px; height:80px; background-color:#ffb;
+    }
+    
+
+

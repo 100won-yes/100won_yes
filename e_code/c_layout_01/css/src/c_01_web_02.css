@@ -1,0 +1,166 @@
+@charset "UTF-8";
+/* c_01_web_02 */
+
+#wrap {
+  padding-top:100px;
+  width:1200px; height:auto; min-height:500px;
+}
+
+/* .headBox
+--------------------------------------------------------- */
+
+.headBox {
+  position:fixed; top:0; left:0%;
+  width:100%; height:100px;
+  background-color:#333;
+}
+
+/* .head_wrapper {
+  width:1200px; height:40px;
+  margin:auto;
+} */
+  .siteLogo {
+    float:left;
+    width:200px; height:100%;
+    background-color:#996;
+  }
+  .navigation {
+    margin-top:50px;
+    float:right;
+    width:600px; height:50px;
+    background-color:#996;
+  }
+  .navigation > ul > li {
+    float:left;
+    width:25%; height:50px; 
+    background-color:#fff;
+  }
+    .nav_title {
+      width:100%; height:100%;
+    }
+    .nav_title a {
+      display:block;
+      box-sizing:border-box;
+      border:1px solid #333;
+      width:100%; height:100%;
+      text-align:center;
+      line-height:50px;
+      background-color:#fff;
+    }
+      .nav_list {
+        display:none;
+        width:100%; height:auto; background-color:#333;
+      }
+      .nav_list li {
+        width:100%; height:40px; padding:2px;
+        box-sizing:border-box;
+      }
+      .nav_list a {
+        display:block; width:100%; height:100%;
+        text-align:center; line-height:40px; 
+        background-color:#fff;
+      }
+      /* 방법1 */
+      /* .navigation:hover .nav_list {display:block;} */
+      /* 방법2 */
+      .navigation li:hover > .nav_list {display:block;}
+      /* 틀린방법 */
+      /* .nav_title:hover + .nav_list {display:block;} */
+
+/* .imageBox
+--------------------------------------------------------- */
+
+.imageBox {
+  width:100%; height:300px;
+  background-color:#555;
+}
+
+/* .contentBox
+--------------------------------------------------------- */
+
+.contentBox {
+  width:100%; height:200px;
+  background-color:#777;
+}
+.contentBox > section {float:left;}
+
+  .notice {
+    width:calc(100% / 3); height:100%;
+    background-color:#6bb;
+  }
+  .notice > h3 {
+    width:100px; height:50px;
+    background-color:#fff;
+    border:1px solid #333;
+    border-bottom:1px;
+    text-align:center;
+    line-height:50px;
+  }
+    .noti_text {
+      border:1px solid #333;
+      width:100%; height:150px;
+      background-color:#fff;
+      padding:30px;
+    }
+  .gallery {
+    width:calc(100% / 3); height:100%;
+    background-color:#2bb;
+  }
+  .gallery > h3 {
+    width:100px; height:50px;
+    background-color:#fff;
+    border:1px solid #333;
+    border-bottom:1px;
+    text-align:center;
+    line-height:50px;
+  }
+    .gal_image {
+      border:1px solid #333;
+      width:100%; height:150px;
+      background-color:#fff;
+      padding:30px;
+    }
+    .gal_image li {
+      margin-right:10px;
+      float:left;
+      width:100px; height:100px;
+      border:1px solid #333;
+    }
+  .banner {
+    width:calc(100% / 3); height:100%;
+    background-color:#9bb;
+  }
+
+/* 탭메뉴 설정 가이드 */
+.noti_text, .gal_image {display:none;}
+.notice > h3:active + .noti_text {display:block;}
+.gallery > h3:active + .gal_image {display:block;}
+
+/* .otherBox
+--------------------------------------------------------- */
+.otherBox {
+  width: 900px; height: 800px; margin:30px auto;
+  background-image:linear-gradient(#aaf, #faa);
+}
+
+
+
+/* .footBox
+--------------------------------------------------------- */
+
+.footBox {
+  width:100%; height:100px;
+  background-color:#bbb;
+}
+
+  /* .siteLogo {} */
+  .copyright {
+    float:left;
+    width:800px; height:100%;
+    background-color:#4bf
+  }
+  .familysite {
+    float:left;
+    width:200px; height:100%;
+    background-color:#4b9
+  }
