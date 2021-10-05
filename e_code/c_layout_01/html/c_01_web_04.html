@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- c_01_web_04.html -->
+<html lang="ko-KR" class="no-js">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <script src="../js/common/modernizr-custom.js"></script>
+    <link rel="stylesheet" href="../css/common/reset.css">
+    <link rel="stylesheet" href="../css/common/common.css">
+    <link rel="stylesheet" href="../css/src/c_01_web_04.css">
+    <title>web04</title>
+    <link rel="shortcut icon" href="../favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="../favicon.png">
+  </head>
+  <body>
+    <!-- layout -->
+    <div id="wrap">
+      <!-- <h1><a href="./a_content.html">웹</a></h1> -->
+      <div id="headBox">
+        <div class="head_area"></div>
+        <div class="navigation">
+          <ul>
+            <li>
+                <dl>
+                  <dt class="menu_box_01"><a href="#">menu_1</a></dt>
+                  <dd class="sub_box_01">
+                      <a href="#">submenu_1</a>
+                      <a href="#">submenu_2</a>
+                      <a href="#">submenu_3</a>
+                      <a href="#">submenu_4</a>
+                  </dd>
+                </dl>
+            </li>
+            <li><a href="#">menu_2</a></li>
+            <li><a href="#">menu_3</a></li>
+            <li><a href="#">menu_4</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="viewBox">
+        <h2 class="blind">광고영역</h2>
+
+        <div class="view_btn" hidden>다음/이전버튼</div>
+        <div class="view_indicator" hidden>인디케이터</div>
+        
+        <!-- .view_area 영역의 위치를 잡기위한 틀 -->
+        <div class="view_area">
+          <!-- .view_wrapper 광고영역의 나열시 범위 -->
+          <div class="view_wrapper">
+            <!-- .view_content 광고내용 -->
+            <div class="view_content view_01">광고 01</div>
+            <div class="view_content view_02">광고 02</div>
+            <div class="view_content view_03">광고 03</div>
+          </div>
+        </div>
+      </div>
+      <div id="contentBox">
+        <h2 class="blind">본문내용</h2>
+        <div class="info_content_area">
+          <ul class="tab_title">
+            <li class="action"><button type="button">공지사항</button></li>
+            <li><button type="button">갤러리</button></li>
+          </ul>
+          <div class="tab_content">
+            <div class="notice">
+              <h3>공지사항</h3>
+              <ul>
+                <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                <li><a href="#">Lorem, ipsum dolor.</a></li>
+                <li><a href="#">Lorem, ipsum.</a></li>
+                <li><a href="#">Lorem.</a></li>
+              </ul>
+            </div>
+            <div class="gallery" hidden></div>
+          </div>
+        </div>
+        <div class="sub_view_area"></div>
+        <div class="location_link_area"></div>
+      </div>
+      <div id="footBox">
+        <h2>site information</h2>
+        <div class="info_nav"></div>
+        <address>
+          <p>사이트명</p>
+          <p>사이트 주소</p>
+          <p>
+            <!-- 
+              * 강조의 표현 : 
+              storng : 강요성(위협,무조건적인)을 띈 강조 - danger
+              em : 권유성을 강조
+              ins : 추가 첨부된 내용
+              del : 기존 내용에서 삭제된 내용
+              mark : 인식(형광펜)
+            -->
+            <em>연락처</em>:<span>02-0000-0000</span>
+            <em>팩스</em>:<span>02-0000-0000</span>
+            <em>이메일</em>:<span>xxx@xxx.xxx</span>
+          </p>
+          <p>사업자번호, 통신판매번호</p>
+          <span class="blind">copyright</span>&copy; web tutorial.  
+        </address>
+      </div>
+    </div>
+    <!-- script -->
+    <script></script>
+  </body>
+</html>

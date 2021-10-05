@@ -1,0 +1,106 @@
+@charset "UTF-8";
+/* c_01_web_04 */
+
+
+/* ========================================================== */
+#wrap {width:1000px; height:650px; background-color:#333;}
+#wrap > div {float:left;}
+
+/* #headBox========================================================= */
+#headBox {width:200px; height:100%; background-color:#bbb;}
+  .head_area {width:200px; height:100px; background-color:#555;}
+  .navigation {
+    margin:10px; width:180px; height:200px; background-color:#555;
+  }
+  /* .navigation li {width:180px; height:50px;} */
+  .navigation > dt {
+    text-align:center; line-height:50px; width:180px; height:50px;
+    color:#fff;
+  }
+  .menu_box_01:hover > a {background-color:#fff;}
+  /* .navigation dd  */
+  
+    .menu_box_01 > a:hover .sub_box_01 {display:block;}
+    .sub_box_01 {
+    width:180px; height:200px; background-color:#fff;
+    }
+    .sub_box_01 a {
+      text-align:center; line-height:50px; width:180px; height:50px;
+    }
+/* #viewBox========================================================= */
+#viewBox {
+  padding:10px 50px;
+  width:800px; height:350px; 
+  background-color:#aaa;
+}
+    /* 가로 슬라이드 형태 */
+    /* 
+    .view_area {
+      overflow:hidden;
+      border:1px solid #333;
+      width:100%; height:100%; background-color:#afc;
+    }
+      .view_wrapper {width:300%; height:100%; background-color:#fac;}
+        .view_content {float:left; width:calc(100% / 3); height:100%;} 
+        */
+
+    /* 같은 자리에 모여있는 형태로 사용 방법
+      - 기준이 되는 요소에 relative
+      - 보여줄 요소에 absolute
+      - 처음 보여주어야 하는 요소에 z-index를 주어 앞으로 배치
+      - 이후에 (뒤에) 오는 요소에는 z-index를 앞에 올 요소의 낮은값으로 주어 뒤에 배치
+      - 이외의 나머지는 보이지 않도록 처리 */
+    .view_area {
+      border:1px solid #333;
+      width:100%; height:100%; background-color:#afc;
+    }
+      .view_wrapper {
+        position:relative;
+        width:100%; height:100%; background-color:#fac;
+      }
+        .view_content {position:absolute; top:0; left:0; width:100%; height:100%;} 
+        .view_01{z-index:10; background-color:#432;}
+        .view_02{z-index:9; background-color:#538;}
+        .view_03{background-color:#177;}
+
+/* #contentBox========================================================= */
+#contentBox {width:800px; height:200px; background-color:#999;}
+  
+  .info_content_area {
+    float:left; width:50%; height:200px; background-color:#a34;
+  }
+    .tab_title {width:100%; height:30px; background-color:#52c;}
+    .tab_title li {float:left; width:100px; height:30px;}
+    .tab_title button {
+      width:100%; height:100%; background-color:#fff;
+    }
+    .tab_title button:hover {background-color:#aaa; text-decoration:underline;}
+    .tab_title li.action > button {
+      background-color:#333; color:#fff; 
+      font-weight:700;
+    }
+    .tab_content {
+      border-top:1px solid #333;
+      width:100%; height:150px; background-color:#342;
+    }
+      .tab_content > div {width:100%; height:100%; padding:5px; background-color:#333;}
+      .notice h3 {width:100%; height:auto; padding-bottom:5px;}
+      .notice ul {width:100%; height:auto; max-height:120px;}
+      .notice li {width:100%; height:18px; margin-bottom:3px; line-height:18px; color:#666;}
+      .notice li:before {
+        content:"+"; color:#f06; margin-right:3px;
+      }
+      .notice a:focus {
+        outline:0; text-decoration:underline; text-decoration-color:#f06;
+        font-weight:600;
+      }
+      
+  .sub_view_area {
+    float:left; width:25%; height:200px; background-color:#1d4;
+  }
+  .location_link_area {
+    float:left; width:25%; height:200px; background-color:#34a;
+  }
+
+/* #footBox========================================================= */
+#footBox {width:800px; height:100px; background-color:#888;}

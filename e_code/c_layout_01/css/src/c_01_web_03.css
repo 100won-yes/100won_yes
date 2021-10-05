@@ -1,0 +1,106 @@
+@charset "UTF-8";
+/* c_01_web_03 */
+
+#wrap {
+  margin:auto;
+  width:1000px; height:auto; background-color:#ddd;
+}
+
+#headBox {
+  float:left; 
+  width:200px; height:650px; background-color:#bbb;
+}
+  .logo_box {
+    width:200px; height:100px; background-color:#666;
+  }
+  .menu_box {
+    
+    border:1px solid #333;
+    box-sizing:border-box;
+    margin-top:10px; margin-left:10px;
+    width:180px; height:200px; background-color:#666;
+  }
+  .menu_box button {
+
+    text-align:center;
+    line-height:50px;
+    box-sizing:border-box;
+    border:1px solid #333;
+    width:100%; height:50px; background-color:#fff;
+  }
+  .menu_box li div {
+
+    top:-100px; left:180px;
+    float:left; width:150px; height:300px; background-color:#333;
+  }
+
+
+
+#imageBox {
+  float:left;
+  width:800px; height:350px; background-color:#aaa;
+}
+#contentBox {
+  float:left;
+  width:800px; height:200px; background-color:#999;
+}
+#contentBox > div {float:left;}
+  .notice {
+    width:calc(100% / 3); height:200px; background-color:#666;
+  }
+  .gallery {
+    width:calc(100% / 3); height:200px; background-color:#555;
+  }
+  .movenow {
+    width:calc(100% / 3); height:200px; background-color:#444;
+  }
+
+#footBox {
+  float:left;
+  width:800px; height:100px; background-color:#888;
+}
+#footBox > div {float:left;}
+  .logo_bot {width:200px; height:100px; background-color:#aaa;}
+  .copyright {width:450px; height:100px; background-color:#ccc;}
+  .familysite {width:150px; height:100px; background-color:#bbb;}
+
+  
+.menu_box div {
+  display:none;
+  width:100%; height:auto; min-height:140px;
+  margin-left:100%;
+  transform:translateY(-50%);
+  background-color:#333;
+}
+
+.menu_box li:hover div {display:block;}
+
+.movenow > button {
+  width:100%; height: 100%; 
+  background-color:#575757; color:#fff;
+}
+.modal_area {
+  position:fixed; top:0; left:0; right:0; bottom:0; margin:auto;
+  z-index:1500;
+}
+.modal_message {
+  position:absolute; top:0; left:0; right:0; bottom:0; margin:auto;
+  width:700px; height:400px; padding:10px;
+  border:1px solid #333;
+  background-color:#fff;
+  border-radius:0.3rem;
+  box-shadow:5px 5px 5px rgba(51,51,51,0.9);
+}
+.modal_message .close {
+  position:absolute; right:0; bottom:0;
+  padding:10px;
+}
+.modal_message .close button {
+  width:100px; height:40px; 
+  border-radius:0.3rem;
+  background-color:#ccc;
+  box-shadow:3px 3px 3px rgba(0,0,0,0.5);
+}
+.modal_bg {
+  width:100%; height:100%;
+  background-color:rgba(51,51,51,0.7);}
