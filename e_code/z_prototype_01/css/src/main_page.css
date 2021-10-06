@@ -1,12 +1,14 @@
 @charset "UTF-8";
 /* main_page */
 
-/* 
---c01:#fff;
---c02:#ddd;
---c03:#aaa;
---c04:#666;
---c05:#333; */
+
+:root {
+  --c01:#fff;
+  --c02:#ddd;
+  --c03:#aaa;
+  --c04:#666;
+  --c05:#333;
+}
 
 
 #wrap {width:1440px; height:auto;}

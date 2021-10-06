@@ -1,0 +1,14 @@
+@charset "UTF-8"; 
+/* c_01_web_05.css */
+
+h1 {
+  background-color:#ccc;
+  border-bottom:1px solid #057;
+}
+
+@supports (var(--border-l2)){
+  h1 {
+    background-color:var(--color-gray2);
+    border-bottom:var(--border-l2);
+  }
+}

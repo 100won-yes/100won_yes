@@ -1,0 +1,36 @@
+@charset "UTF-8"; 
+/* b_07_font.css */
+
+#wrap {width:100%; height:auto;}
+
+p {
+  font-family: 'Birthstone', 'HSYuji-Regular', 'IBM Plex Sans KR', cursive, sans-serif;
+  font-weight:200;
+  border:1px solid #333;
+}
+
+p:nth-of-type(1) {
+  font-weight:600; font-style:italic;
+  line-height:1.2; letter-spacing:10px;
+  word-spacing:0; text-align:center;
+  word-break:keep-all;
+  font-size:2em;
+}
+
+p:nth-of-type(2) {
+  font-weight:100; line-height:160%;
+  letter-spacing:-1px; word-spacing:-3px;
+  text-align:justify;
+  word-break:break-all;
+}
+p:nth-of-type(3) {
+  /* font:weight style size/line family,family.family...; */
+  font:10px/1.2 'sans-serif';
+  font-size:1.5em;
+  width:500px; line-height:1.2;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+button {word-spacing:-4px;}
