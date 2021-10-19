@@ -40,3 +40,5 @@ table,tr,td,th,thead,tbody,tfoot {
 
 header,article,nav,section,footer,aside,
 main,figure,figcaption,hgroup {display:block;}
+
+#wrap {height:auto; margin:auto;}

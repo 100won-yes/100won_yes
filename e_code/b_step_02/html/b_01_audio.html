@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- b_01_audio.html -->
+<html lang="ko-KR" class="no-js">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../fonts/ibm_flex/IBMPlex.css">
+    
+    <link rel="stylesheet" href="../css/common/reset.css">
+    <link rel="stylesheet" href="../css/common/common.css">
+    <link rel="stylesheet" href="../css/src/b_01_audio.css">
+    <script src="../js/common/modernizr-custom.js"></script>
+    <title>문서이름</title>
+    <link rel="shortcut icon" href="../favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="../favicon.png">
+  </head>
+  <body>
+    <!-- layout -->
+    <div id="wrap">
+      <h1><a href="./a_content.html">웹</a></h1>
+
+      <div class="part">
+        <h2>audio 불러오기</h2>
+        <p>audio는 음성파일을 불러오는 태그이다.</p>
+        <div class="sound">
+          <audio src="../multi/audio/cinematic-fairy-tale-story-main-8697.mp3" controls>
+            <p>
+              현재 사용하고 있는 브라우저는 audio파일을 지원하지 않습니다. <br />
+              <a href="http://google.com/chrome">최신 브라우저</a>를 사용하세요.
+            </p>
+          </audio>
+        </div>
+
+        <div class="sound">
+          <div class="audio_btn">
+            <button type="button">재생&sol;일시정지</button>
+            <button type="button">음소거</button>
+          </div>
+          <audio controls>
+            <source src="../multi/audio/in-the-forest5718.ogg" type="audio/ogg"/>
+            <source src="../multi/audio/in-the-forest5718.mp3" type="audio/mp3"/>
+            <p>
+              현재 사용하고 있는 브라우저는 audio파일을 지원하지 않습니다. <br />
+              <a href="http://google.com/chrome">최신 브라우저</a>를 사용하세요.
+            </p>
+          </audio>
+        </div>
+
+      </div>
+    </div>
+    <!-- script -->
+    <script></script>
+  </body>
+</html>
