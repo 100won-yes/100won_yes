@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- b_09_layout_test_coupang_signup.html -->
+<html lang="ko-KR" class="no-js">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../fonts/ibm_flex/IBMPlex.css">
+
+    <link rel="stylesheet" href="../css/common/reset.css">
+    <link rel="stylesheet" href="../css/common/common.css">
+    <link rel="stylesheet" href="../css/src/b_09_layout_test_coupang_login.css">
+    <script src="../js/common/modernizr-custom.js"></script>
+    <title>문서이름</title>
+    <link rel="shortcut icon" href="../favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="../favicon.png">
+  </head>
+  <body>
+    <!-- layout -->
+    <div id="wrap">
+      <h1><a href="./a_content.html">coupang</a></h1>
+      <article id="loginBox">
+        <h2 class="blind">로그인 영역</h2>
+        <form action="#" method="POST">
+          <fieldset class="make_account">
+            <legend class="blind">아이디, 비밀번호 입력</legend>
+            <ul class="account_area">
+              <li>
+                <label for="userId">
+                  <span class="blind">아아디를 입력하세요.</span>
+                </label>
+                <div class="input_con">
+                  <span><i class="fas fa-envelope"></i></span>
+                </div>
+                <div class="input_part">
+                  <input type="text" name="user__Id" id="userId" value="" placeholder="아이디(이메일)" />
+                </div>
+              </li>
+              <li class="action">
+                <label for="userPw">
+                  <span class="blind">비밀번호를 입력하세요.</span>
+                </label>
+                <div class="input_con">
+                  <span><i class="fas fa-lock"></i></span>
+                </div>
+                <div class="input_part">
+                  <input type="password" name="user__Pw" id="userPw" value="" placeholder="비밀번호"/>
+                  <span><i class="fas fa-eye"></i></span>
+                </div>
+              </li>
+            </ul>
+
+          </fieldset><!-- .make_account -->
+
+          <fieldset class="check_area">
+            <input type="checkbox" id="loginCheck" name="login__Check" value="" />
+                <label for="loginCheck">자동로그인</label>
+                <a href="#">아이디(이메일)/비밀번호 찾기 <i class="fas fa-chevron-right"></i></a>
+          </fieldset>
+
+          <fieldset class="login_btn">
+            <legend class="blind">로그인동의 버튼</legend>
+            <!-- <input type="submit" value="가입하기" /> -->
+            <button type="submit" class="btn">로그인</button>
+          </fieldset><!-- .join_btn -->
+
+          <hr />
+
+          <fieldset class="join_btn">
+            <legend class="blind">가입동의 버튼</legend>
+            <!-- <input type="submit" value="가입하기" /> -->
+            <button type="submit" class="btn">회원가입</button>
+          </fieldset><!-- .join_btn -->
+
+        </form>
+      </article>
+      <footer id="footBox">
+        <h2 class="blind">coupang info</h2>
+        <address>
+          <p class="blind">주소</p>
+          <p class="blind">연락처</p>
+          <p>ⓒCoupang Corp. All rights reserved.</p>
+        </address>
+      </footer>
+    </div>
+    <!-- script -->
+    <script></script>
+  </body>
+</html>

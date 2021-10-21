@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/* b_07_layout_test_jobis_signup */
+
+h1 {
+  width:100%; height:50px;
+  padding:1rem;
+  color:#468FF6;
+  text-align:center;
+}
+h1 > a {
+  display:block;
+  width:200px; height:100%;
+  font-size:2rem;
+  line-height:50px;
+  background-color: #fff;
+}
+#wrap {
+  width:600px; height:auto;
+  color:#333;
+}
+
+#signup {
+  width:500px; height:auto;
+  margin:auto; padding:5px;
+  margin-top:50px;
+}
+
+h2 {
+  width:100%; height:auto;
+  margin-bottom:25px;
+  font-size:1.357rem;
+}
+
+.sign_content {
+  width:100%; height:auto;
+  min-height:500px;
+}
+
+/* ========================================== */
+
+.make_account {
+  width:100%; height:400px;
+}
+  .input_text {
+    width:100%; height:192px;
+    margin-bottom:20px;
+  }
+  .input_text ul {
+    width:100%; height:auto;
+  }
+  .input_text li {
+    width:100%; height:40px;
+    margin-bottom:12px;
+  }
+  .input_text li:last-child {
+    margin-bottom:0;
+  }
+  .input_text input {
+    width:100%; height:100%;
+    text-indent:0.5rem; padding:0.5rem;
+    color:#676767; box-sizing:border-box;
+    border:1px solid #777;
+    border-radius:0.3rem;
+    background-color: #eee;
+  }
+  .make_btn {
+    width:100%; height:40px;
+    padding:1rem 0; box-sizing:content-box;
+  }
+  .make_btn > button {
+    width:100%; height:100%;
+    color:#fff; font-size:1rem;
+    font-weight:600;
+    border-radius:0.3rem; 
+    box-shadow:0 0.3rem 0.3rem #468fba;
+    background-color: #468ff6;
+    transition:all 200ms ease;
+  }
+  .make_btn > button:hover {
+    transform:translateY(-0.1rem);
+    background-color: #4f9fff;
+  }
+  .make_btn > button:focus {
+    outline:3px solid #4f9fff;
+    font-size:1.3rem;
+  }
+
+/* ========================================== */
+
+p {
+  /* margin-top:50px; */
+  width:100%; height:auto;
+  padding:15px 0; font-size:0.875rem;
+  font-weight:400;
+}
+p > a {
+  font-size:1rem; color:#468FF6;
+  font-weight:600;
+}
+.sign_content > p:last-of-type {
+  text-align:center;
+}
