@@ -1,0 +1,134 @@
+@charset "UTF-8"; 
+/* b_10_layout_test_coupang_join.css */
+
+#wrap {
+  width: 100%; height: auto;
+  min-height:500px;
+}
+
+h1 {
+  width: 200px; height: auto;
+  margin:auto;
+  margin-top:20px;
+  margin-bottom:20px;
+  font-size:50px;
+}
+
+#mainBox {
+  width: 500px; height: auto;
+  min-height: 500px;
+  margin:auto;
+  padding:0 20px;
+}
+.main_inner {
+  width:100%; height: auto;
+}
+.main_inner fieldset {
+  margin-bottom:30px;
+}
+/* ========================================================= */
+
+.jointext_area {
+  width: 100%; height: auto;
+}
+.user_title {font-weight:500;}
+.input_part {
+  width: 100%; height: auto;
+}
+.input_part > li {
+  width: 100%; height: 48px;
+  margin-top:12px;
+}
+.image_part {
+  float:left;
+  width: 45px; height: 48px;
+  text-align:center;
+  line-height:48px;
+  color:#ccc;
+  background-color: #fafafa;
+  border:1px solid #ccc;
+  border-right-width:0;
+}
+.image_part > i {
+  font-size:20px;
+}
+.text_part {
+  float:right;
+  width: 415px; height: 48px;
+  border:1px solid #ccc;
+}
+.text_part > input {
+  width: 100%; height: 100%;
+  padding:10px 0;
+}
+
+/* ========================================================= */
+
+.check_area {
+  width: 100%; height: auto;
+}
+.check_name {
+  width: 100%; height: 55px;
+  padding:17px 0; box-sizing: border-box;
+  font-weight:500;
+}
+.check_main {
+  width: 100%; height: 22px;
+}
+.check_main > label {
+  font-weight:500;
+  font-size:18px;
+}
+#allCheck {
+  width: 20px; height: 20px;
+}
+.check_sub {
+  width: 100%; height: 186px;
+  margin:14px 0;
+  padding:16px;
+  padding-right:24px;
+  border:1px solid #ccc;
+}
+.check_sub > label {
+  top:100px; right:100px;
+  width: 100%; height: 20px;
+  background-color: #df2;
+}
+.check_sub input {
+  margin-right:5px;
+  width: 18px; height: 18px;
+  line-height: 20px;
+}
+
+.check_sub li {
+  width: 100%; height: 20px;
+  margin-bottom:12px;
+  font-size: 15px;
+  line-height:20px;
+}
+.check_sub button {float:right; font-size:18px;}
+
+/* ========================================================= */
+
+.joinbtn_area {
+  width: 100%; height: 52px;
+}
+.joinbtn_area > button {
+  width: 100%; height: 100%;
+  background-color: #0074e9;
+  color:#fff;
+  font-weight:500;
+  font-size:18px;
+  box-shadow:0 2px 0 rgba(0,0,0,0.7);
+}
+
+/* ========================================================== */
+#footBox {
+  width: 100%; height: auto;
+}
+#footBox p {
+  margin:auto;
+  text-align:center;
+  font-size:14px;
+}
+
