@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/* c_10_smartphone */
+
+/* (디자인 기준 : 320px) ~ 767px */
+@media all and (max-width:767px) {
+
+  #wrap {width:100%; min-width:320px; min-height:600px;}
+
+    #headBox {height:100px;}
+    #viewBox {width:48.125%; min-width:154px; height:400px; background-color:#07a;}
+    #conBox {display:none;}
+    #infoBox {display:none;}
+    #footBox {height:140px; background-color:#afa;}
+}/* max-width:767px =================================================== */
