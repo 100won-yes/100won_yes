@@ -1,0 +1,92 @@
+// e_08_responsive_002.scss
+
+#root {
+  width:100%; height:auto; min-height:500px;
+  background-color:#eef;
+}
+
+#headBox {
+  display: flex;
+  justify-content: space-between;
+  position: fixed; z-index:1000;
+  top: 0; left:0;  right: 0; 
+  width:100%; max-width:1440px; height:80px; 
+  margin:auto; padding:0.5rem 1rem;
+  border-bottom: 1px solid #555; 
+  box-shadow:0 0.2rem 0.2rem rgba(0,0,0,0.4);
+  background-color: rgba(#fff, 0.8); }
+
+  #navBox {
+    width:auto; height:100%; background-color:#fff;
+    padding-top:1.5rem
+  }
+  .nav_btn {display:none;}
+  .gnb {
+    display:flex;
+    justify-content:flex-end;
+
+    >li {width:200px; margin-right:2rem;}
+    >li:first-child {margin-left:0;}
+  }
+.gnb_title {font-weight:700; text-transform:uppercase;}
+.sub_list {display:none; width:100%; height:auto; background-color:#fdd;}
+// .gnb:hover .sub_list {display:block;}
+.gnb > li.on .sub_list {display:block;}
+// * hover,focus 기능을 js에서 수행
+
+@media screen and (max-width:768px) {
+  #headBox {background-color:#fa0;}
+  #navBox {height:auto; padding:0.5rem;}
+  .nav_btn {
+    display:block;
+    position:relative; z-index:500;
+    width:2.5rem; height:2.5rem;
+
+    > button {width:100%; height:100%; background-color:#fdf;}
+    .menu_bar {
+      display:block; position:relative; 
+      width:100%; height:2px; background-color:#555; transition:all 300ms linear;
+    }
+    .menu_bar::before {
+      content:""; display:block; 
+      position:absolute; top:0; left:0; transform:translateY(-1rem); 
+      width:100%; height:2px; background-color:#555; transition:all 300ms linear;
+    }
+    .menu_bar::after {
+      content:""; display:block; 
+      position:absolute; top:0; left:0; transform:translateY(1rem);
+      width:100%; height:2px; background-color:#555; transition:all 300ms linear;
+    }
+  }
+  .nav_btn.on .menu_bar {height:0;}
+  .nav_btn.on .menu_bar::before{transform:translateY(0)rotate(45deg);}  
+  .nav_btn.on .menu_bar::after{transform:translateY(0)rotate(-45deg);}
+  .nav_btn.on + .gnb {display:block;}
+  
+  .gnb {
+    display:none;
+    justify-content:flex-start;
+    flex-direction:column;
+    align-items:flex-end;
+    position:fixed;
+    width:100%; height:100%; background-color:#dfa;
+    padding:2rem; padding-top:5rem;
+    top:0; right:0;
+
+    > li {margin-left:0; margin-bottom:1rem;}
+  }
+  .gnb_title {background-color:#adf;}
+  // .sub_list {display:block;}
+}
+
+
+#mainBox {
+  width:100%; height:auto; min-height:1200px; 
+  background-color:#5cf;
+}
+
+#footBox {
+  width:100%; height:auto; min-height:200px; 
+  padding-bottom:80px;
+  background-color:#333;
+}

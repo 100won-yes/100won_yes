@@ -1,0 +1,11 @@
+{
+  "name": "b_step_05",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "browser-sync --start --watch && sass --watch --no-source-map ./public/dist/scss:./public/dist/css"
+  },
+  "author": "",
+  "license": "ISC"
+}

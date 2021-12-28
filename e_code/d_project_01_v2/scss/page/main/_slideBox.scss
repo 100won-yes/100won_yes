@@ -1,0 +1,10 @@
+// slideBox
+
+#slideBox {
+  width:100%; height:100vh; min-height:500px;
+
+  @include mobile {min-width:320px; background-color:#fda;}
+  @include tablet {background-color:#adf;}
+  @include laptop {background-color:#fdf;}
+  @include pc {background-color:#dfd;}
+}
