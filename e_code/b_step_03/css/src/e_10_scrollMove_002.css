@@ -1,0 +1,73 @@
+#wrap {
+  width: 100%;
+  height: auto;
+  min-width: 500px;
+  padding: 0 1rem 5rem;
+  padding-top: 300rem;
+  background-image: linear-gradient(45deg, #fa0, #acf, #ccc);
+}
+
+#headBox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 200;
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  border-bottom: 1px solid #000;
+  padding: 1rem;
+}
+
+#viewBox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 700px;
+  border: 1px solid #777;
+  padding: 0.5rem;
+  margin-top: 10rem;
+}
+#viewBox > .img_area {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid #7af;
+}
+#viewBox > .img_area img {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+}
+#viewBox > .img_area img.on {
+  display: block;
+}
+
+#contentBox {
+  width: 100%;
+  max-width: 1200px;
+  height: 800px;
+  background-color: #fd7;
+}
+
+#footBox {
+  width: 100%;
+  height: 200px;
+  background-color: #333;
+}
+
+/*# sourceMappingURL=e_10_scrollMove_002.css.map */
