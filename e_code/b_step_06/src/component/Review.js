@@ -1,5 +1,6 @@
 import React,{useState, useEffect} from 'react';
 // import axios from 'axios';
+import Styled from 'styled-components';
 import '../style/Review.scss';
 
 
@@ -26,14 +27,33 @@ export default function Review() {
 
   return (
     <div className="review_area">
-      <form method="POST" action="#">
+      {/* <form method="POST" action="#">
         <fieldset>
           <legend>리뷰 작성</legend>
           <input id="reviewText" name="review__Text" 
           onChange={fnReviewChange} />
           <p>{review}</p>
         </fieldset>
-      </form>
+      </form> */}
+
+      <FormSet method="POST" action="#">
+        <Field>
+          <Legend>리뷰 작성</Legend>
+          <input id="reviewText" name="review__Text" 
+          onChange={fnReviewChange} />
+          <p>{review}</p>
+        </Field>
+      </FormSet>
     </div>
   )
 }// Review()
+
+const FormSet = Styled.form`
+  width:100%; min-width:1000px; height:500px; padding:1rem 2rem; margin:1rem auto; border:1px solid #333;
+`
+const Field = Styled.fieldset`
+  width:100%; height:auto; min-height:500px; background-color:#fff;
+`
+const Legend = Styled.legend`
+  width:1px; height:1px; position:absolute; clip:rect(0,0,0,0); overflow:hidden; z-index:-1;
+`

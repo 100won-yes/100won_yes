@@ -125,9 +125,9 @@ nodejs내부에는 기능을가진 앱스토어(실행프로그램모음)가 있
 
 
 
-​       
+​    react   styled-components 설치방법
 
-
+npm install styled-components
 
 
 
